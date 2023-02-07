@@ -182,7 +182,7 @@ class ViewController: UIViewController {
         desctiprionTextView.translatesAutoresizingMaskIntoConstraints = false
         secondDesctiprionTextView.translatesAutoresizingMaskIntoConstraints = false
         
-        bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 426)
+        bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 436)
         
         
         NSLayoutConstraint.activate([
