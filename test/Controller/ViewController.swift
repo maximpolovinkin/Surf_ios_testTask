@@ -49,6 +49,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setUpViews()
     }
     
@@ -183,6 +184,7 @@ class ViewController: UIViewController {
         
         bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 420)
         
+        
         NSLayoutConstraint.activate([
             //Background
             backImage.leftAnchor.constraint(equalTo: view.leftAnchor),
@@ -217,7 +219,9 @@ class ViewController: UIViewController {
             popupView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             popupView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bottomConstraint,
-            popupView.heightAnchor.constraint(equalToConstant: 768),
+          //  popupView.heightAnchor.constraint(equalToConstant: 768),
+            popupView.heightAnchor.constraint(equalTo: view.heightAnchor, constant: -44),
+          
             
             //First CollectionView
             coursesMenu.topAnchor.constraint(equalTo: desctiprionTextView.bottomAnchor, constant: 12),
