@@ -182,7 +182,7 @@ class ViewController: UIViewController {
         desctiprionTextView.translatesAutoresizingMaskIntoConstraints = false
         secondDesctiprionTextView.translatesAutoresizingMaskIntoConstraints = false
         
-        bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 420)
+        bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 426)
         
         
         NSLayoutConstraint.activate([
@@ -219,7 +219,6 @@ class ViewController: UIViewController {
             popupView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             popupView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bottomConstraint,
-          //  popupView.heightAnchor.constraint(equalToConstant: 768),
             popupView.heightAnchor.constraint(equalTo: view.heightAnchor, constant: -44),
           
             
@@ -284,7 +283,7 @@ class ViewController: UIViewController {
         baseAnimator.addAnimations { [unowned self] in
             switch state {
             case .start:
-                self.bottomConstraint.constant = 420
+                self.bottomConstraint.constant = 436
                 secondDesctiprionTextView.fadeOut()
                 twoLinesMenu.fadeOut()
             case .full:
@@ -292,7 +291,7 @@ class ViewController: UIViewController {
                 secondDesctiprionTextView.fadeIn()
                 twoLinesMenu.fadeIn()
             case .medium:
-                self.bottomConstraint.constant = 242
+                self.bottomConstraint.constant = 258
                 secondDesctiprionTextView.fadeIn()
                 twoLinesMenu.fadeIn()
             }
